@@ -1,0 +1,25 @@
+claim,old_value,old_unit,new_value,new_unit,provenance,status
+QoE propose,0.968 [0.961-0.975],sans unite,0.727 (heuristic) / 0.568 (maddpg),sans unite,end_to_end_metrics.csv,CORRIGE (historique retire)
+Gain vs QoS-Only,+22.8 %,%,non calcule (taxonomie changee),%,—,RETIRE (base incoherente ER1)
+Gain vs DL-Only,+20.1 %,%,—,%,—,RETIRE (ER1)
+Perte sans encodeur,18.6 %,%,non applicable (AE degrade),%,compression_metrics.csv,RETIRE/REMPLACE
+alpha appris,0.050,—,0.23-0.31 (maddpg) / 0.05 (heuristic fixe),—,radio_metrics.csv,CORRIGE
+Latence propose,10.35,ms,281 (heuristic) / 6341 (maddpg),ms,latency_breakdown.csv,CORRIGE
+Latence QoS-Only,367.2,ms,10029 (fixed1),ms,latency_breakdown.csv,CORRIGE
+Reduction latence,97.2,%,non revendiquee,%,—,RETIRE (ER8)
+S_frame,17.5,Gbits,3.8 (loot pleine frame a 0.05),Mbits,payload estime mesure, CORRIGE (ER8)
+Dtx a 250 Mbps,3.5,ms,70000 (17.5 Gbit) ; 15 (charge mesuree),ms,test_end_to_end.py,CORRIGE (ER8)
+B_total,1,Gbps,1,GHz,assumptions.yaml H-BW,CORRIGE (ER8)
+SE propose,1.56,b/s/Hz,1.71 (maddpg) / 1.92 (heuristic),b/s/Hz,radio_metrics.csv,CORRIGE
+SE QoS-Only,1.59,b/s/Hz,2.43 (fixed1),b/s/Hz,radio_metrics.csv,CORRIGE
+Energie propose,20.58,mJ,287 (heuristic) / 2852 (maddpg),mJ,energy_breakdown.csv,CORRIGE (ER15)
+Energie QoS-Only,734.4,mJ,13824 (fixed1),mJ,energy_breakdown.csv,CORRIGE (ER15)
+D1-PSNR encodeur,67.8,dB,83.6 (attn-select) / 47.9 (AE),dB,compression_metrics.csv,CORRIGE (echelle pilote)
+Points loot,785,k,793821 (moyenne audit),points,counts_full.csv,CORRIGE
+Points longdress,757,k,834315,points,counts_full.csv,CORRIGE
+Points redandblack,724,k,727071 (min 640070),points,counts_full.csv,CORRIGE (contradiction)
+Points soldier,1.1,M,1075299,points,counts_full.csv,CORRIGE
+Doppler 10 km/h,0.78,kHz,0.259,kHz,test_radio_environment.py,CORRIGE (ER19)
+Effet 70% [22],70,%,retire,%,recherche biblio,RETIRE (ER18)
+Gains 18-24% [11],18-24,%,retires,%,recherche biblio,RETIRES (ER17)
+Gains 30-60% [9],30-60,%,retires,%,recherche biblio,RETIRES (ER18)

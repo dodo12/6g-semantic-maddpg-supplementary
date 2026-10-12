@@ -1,0 +1,11 @@
+# Hypothèses de reconstruction (tout ce qui n'est PAS dans le manuscrit).
+# Chaque hypothèse est étiquetée H-* et rappelée dans les rapports.
+H-N0: "N0 = -174 dBm/Hz (bruit thermique standard) ; le manuscrit ne donne ni N0 ni figure de bruit."
+H-BW: "B_total = 1 GHz (bande). Le manuscrit écrit 'B_total = 1 Gbps' : unité d'un débit, corrigée (ER8)."
+H-QUEUE: "File M/D/1 : lambda = 30 trames/s, mu = service mesuré (1/D_service) ; le manuscrit ne donne ni lambda ni mu."
+H-ENC: "D_enc mesuré (mur) sur l'encodeur réduit CPU ; D_dec = 0.35 ms admis du manuscrit (non mesuré, marqué tel quel)."
+H-CPU: "P_compute = 65 W (CPU desktop typique) pour l'énergie de calcul ; hypothèse illustrative, analyse de sensibilité en Phase G."
+H-ENCODER: "Encodeur réduit : MHA numpy 1 couche/4 têtes/d=64 à poids FIXES (seed) + autoencodeur MLP (sklearn, ENTRAÎNÉ). PAS le Transformer 4×256 entraîné du manuscrit (irréalisable CPU) — borne inférieure honnête."
+H-QOE-RANGES: "Normalisation QoE sur plages observées dans NOS expériences (pas le corpus 8iVFB complet) ; plages publiées dans results/qoe_ranges.json."
+H-FADING: "Rayleigh i.i.d. ; sans blockage spatial mmWave ni mobilité (limite discutée ; Doppler vérifié = 259 Hz à 10 km/h, ER19)."
+H-SMALLN: "n = 3 frames/séquence, 3 graines : statistiques descriptives + IC indicatifs ; aucun test de supériorité revendiqué."

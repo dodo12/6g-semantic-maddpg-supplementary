@@ -1,0 +1,36 @@
+# Protocole expérimental — reconstruction 6G sémantique (sans fuite)
+# Les frames successives d'une même séquence sont corrélées : split par
+# blocs temporels + holdout d'une séquence entière pour le test final.
+seed: 42
+subsample_points: 2048          # Ns : sous-échantillonnage uniforme par frame
+normalize_coords: 1023.0        # coords voxel /1023 ; couleurs /255
+splits:
+  # entraînement : premières frames (passé) de 3 séquences
+  train: [loot_1000, loot_1150, longdress_1051, longdress_1201, redandblack_1450, redandblack_1600]
+  # validation : dernières frames (futur) des mêmes séquences -> extrapolation temporelle
+  val: [loot_1299, longdress_1350, redandblack_1749]
+  # test : séquence soldier ENTIÈREMENT tenue à l'écart -> généralisation inter-séquence
+  test: [soldier_536, soldier_686, soldier_835]
+rules:
+  test_use: "métriques finales uniquement ; jamais pour hyperparamètres ni récompense"
+  preprocessing: "uniforme Ns=2048, seed par frame, même code train/val/test"
+  augmentation: "aucune"
+  seeds: [42, 123, 2026]
+compression:
+  alphas: [0.02, 0.05, 0.1, 0.2, 0.5]
+  latent_dim: 16
+  mlp_hidden: [64, 64]
+  max_iter: 500
+maddpg:
+  episodes: 40
+  steps_per_episode: 40
+  gamma: 0.95
+  tau: 0.01
+  buffer: 20000
+  batch: 128
+  actor_lr: 0.001
+  critic_lr: 0.001
+  noise_start: 0.3
+  noise_end: 0.01
+  kappa: 10.0
+qoe_weights: [0.6, 0.25, 0.15]

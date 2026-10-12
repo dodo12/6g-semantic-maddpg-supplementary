@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.log
+*.err
+.venv/
+.idea/
+.vscode/
+# PLY d'origine (licence 8i : non redistribuables)
+*.ply
+data/raw/

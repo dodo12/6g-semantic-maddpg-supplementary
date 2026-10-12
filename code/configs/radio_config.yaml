@@ -1,0 +1,19 @@
+# Configuration radio — paramètres repris du manuscrit (III-B, V-A),
+# corrections d'unités documentées dans assumptions.yaml
+fc_ghz: 28.0
+pathloss:
+  eta: 2.8
+  d0_m: 1.0
+  PL0_db: 61.4
+  sigma_db: 8.2
+B_total_ghz: 1.0        # CORRIGÉ : le manuscrit écrit "1 Gbps" (un débit) ; une bande s'exprime en Hz (ER8)
+Pmax_w: 2.0
+Dmax_ms: 50.0
+users:
+  # un utilisateur par séquence 8iVFB (distances = Table IV du manuscrit)
+  - {id: 0, sequence: loot, distance_m: 90}
+  - {id: 1, sequence: soldier, distance_m: 120}
+  - {id: 2, sequence: longdress, distance_m: 60}
+  - {id: 3, sequence: redandblack, distance_m: 110}
+fading: rayleigh_iid   # limite connue : pas de blockage mmWave (cf. discussion)
+N0_dbm_hz: -174.0       # hypothèse de reconstruction H-N0 (assumptions.yaml)

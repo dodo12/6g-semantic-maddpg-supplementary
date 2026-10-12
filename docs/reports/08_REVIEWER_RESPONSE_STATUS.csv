@@ -1,0 +1,20 @@
+comment_id,status,evidence,notes
+ER1,RESOLU,manuscript/updated_manuscript.md + old_vs_new_values.csv,fourchette supprimee
+ER2,RESOLU,scripts/run_phaseD.py + figures/fig_reward_convergence.png,taxonomie 6 methodes executees
+ER3,RESOLU,reports/02_DATASET_AUDIT.md + results/counts_full.csv,Table IV corrigee
+ER4,RESOLU,results/statistical_summary.csv + reports/07_STATISTICAL_ANALYSIS.md,stats historiques retirees
+ER5,RESOLU,reports/03_TRANSFORMER_RESULTS.md,courbe AE mesuree
+ER6,RESOLU,figures/fig_reward_convergence.png,plateau mesure
+ER7,RESOLU,figures/fig_rate_distortion.png,seuil abandonne + preuve
+ER8,RESOLU,tests/test_end_to_end.py + results/energy_breakdown.csv,70 s demontre
+ER9,RESOLU,figures/fig_throughput_latency.png + fig_spectral_efficiency.png,SE recalculee
+ER10,RESOLU,maddpg_training_log.csv,figure temporelle regeneree
+ER11,RESOLU,figures/fig_energy_comparison.png + results/energy_breakdown.csv,E=P*T defini
+ER12,PARTIEL,statistical_summary.csv,n=3 insuffisant pour IQR robustes
+ER13,RESOLU,figures (descriptions corrigees),axes + sigma recalcules
+ER14,RESOLU,qoe_results.csv,pourcentages recalcules
+ER15,RESOLU,reports/05_END_TO_END_RESULTS.md + src/metrics,E defini + decompose
+ER16,PARTIEL,— (figure non produite),t-SNE manquant assume plutot que fabrique
+ER17,RESOLU,manuscript/updated_manuscript.md (references),% retires ref conservee
+ER18,RESOLU,manuscript/updated_manuscript.md (references),% retires [22] confirme
+ER19,RESOLU,tests/test_radio_environment.py,259 Hz teste

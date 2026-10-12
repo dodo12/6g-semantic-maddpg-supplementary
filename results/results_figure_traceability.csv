@@ -1,0 +1,13 @@
+figure_id,filename,source_csv,plotting_script,experiment_id,metrics,validation_status
+FIG-D1,fig_point_counts.png,counts_full.csv,scripts/make_figures.py,repro-2026-10,points/frame,CSV-trace
+FIG-D2,fig_sequence_statistics.png,counts_full.csv,scripts/make_figures.py,repro-2026-10,mean/min/max,CSV-trace
+FIG-C1,fig_rate_distortion.png,compression_metrics.csv,scripts/make_figures.py,repro-2026-10,alpha/D1-PSNR,CSV-trace
+FIG-C2,fig_compression_latency.png,compression_metrics.csv,scripts/make_figures.py,repro-2026-10,enc_ms/dec_ms,CSV-trace
+FIG-M1,fig_reward_convergence.png,maddpg_training_log.csv,scripts/make_figures.py,repro-2026-10,reward/QoE,CSV-trace
+FIG-M2,fig_throughput_latency.png,radio_metrics_by_seed.csv,scripts/make_figures.py,repro-2026-10,SE/latency,CSV-trace
+FIG-M3,fig_spectral_efficiency.png,radio_metrics_by_seed.csv,scripts/make_figures.py,repro-2026-10,SE,CSV-trace
+FIG-E1,fig_energy_comparison.png,energy_breakdown.csv,scripts/make_figures.py,repro-2026-10,Etx/Ecomp,CSV-trace
+FIG-E2,fig_latency_breakdown.png,latency_breakdown.csv,scripts/make_figures.py,repro-2026-10,Denc/Dtx/Dq/Ddec,CSV-trace
+FIG-E3,fig_end_to_end_comparison.png,end_to_end_metrics.csv,scripts/make_figures.py,repro-2026-10,QoE/lat/SE/E,CSV-trace
+FIG-Q1,fig_qoe_comparison.png,qoe_results.csv+qoe_sensitivity.csv,scripts/make_figures.py,repro-2026-10,QoE/w1,CSV-trace
+FIG-G1,fig_robustness_analysis.png,robustness_results.csv,scripts/make_figures.py,repro-2026-10,QoE/condition,CSV-trace

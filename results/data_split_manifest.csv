@@ -1,0 +1,13 @@
+frame,sequence,frame_id,split,role,n_points_subsample,seed,preprocessing
+loot_1000,loot,1000,train,apprentissage,2048,42,"uniforme Ns=2048, coords/1023, RGB/255"
+loot_1150,loot,1150,train,apprentissage,2048,42,"uniforme Ns=2048, coords/1023, RGB/255"
+loot_1299,loot,1299,val,sélection hyperparamètres (frames futures),2048,42,"uniforme Ns=2048, coords/1023, RGB/255"
+longdress_1051,longdress,1051,train,apprentissage,2048,42,"uniforme Ns=2048, coords/1023, RGB/255"
+longdress_1201,longdress,1201,train,apprentissage,2048,42,"uniforme Ns=2048, coords/1023, RGB/255"
+longdress_1350,longdress,1350,val,sélection hyperparamètres (frames futures),2048,42,"uniforme Ns=2048, coords/1023, RGB/255"
+redandblack_1450,redandblack,1450,train,apprentissage,2048,42,"uniforme Ns=2048, coords/1023, RGB/255"
+redandblack_1600,redandblack,1600,train,apprentissage,2048,42,"uniforme Ns=2048, coords/1023, RGB/255"
+redandblack_1749,redandblack,1749,val,sélection hyperparamètres (frames futures),2048,42,"uniforme Ns=2048, coords/1023, RGB/255"
+soldier_536,soldier,536,test,test final (séquence soldier tenue à l'écart),2048,42,"uniforme Ns=2048, coords/1023, RGB/255"
+soldier_686,soldier,686,test,test final (séquence soldier tenue à l'écart),2048,42,"uniforme Ns=2048, coords/1023, RGB/255"
+soldier_835,soldier,835,test,test final (séquence soldier tenue à l'écart),2048,42,"uniforme Ns=2048, coords/1023, RGB/255"
